@@ -1,0 +1,28 @@
+{
+  "access_control": {
+    "type": "object",
+    "description": "控制哪些用户或群可以使用 qqyy 插件",
+    "items": {
+      "enabled": {
+        "type": "bool",
+        "description": "是否启用白名单访问控制",
+        "default": false
+      },
+      "allowed_user_ids": {
+        "type": "list",
+        "description": "允许使用插件的用户 ID 列表",
+        "default": []
+      },
+      "allowed_group_ids": {
+        "type": "list",
+        "description": "允许使用插件的群 ID 列表",
+        "default": []
+      },
+      "deny_message": {
+        "type": "string",
+        "description": "访问被拒绝时的提示语",
+        "default": "当前用户或群组未被允许使用 QQ 音乐听歌报告插件"
+      }
+    }
+  }
+}
